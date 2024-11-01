@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    background-image: url('tkt.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    gap: 20px;
+}
+
+.ticket-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.ticket-section input[type="text"],
+.ticket-section input[type="date"],
+.ticket-section input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ticket-section input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ticket-section input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.ticket-history {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.ticket-history h3 {
+    text-align: center;
+    color: #333;
+}
+
+#history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#history-table th, #history-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#history-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+}
+
+#history-table td {
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ticket-section, .ticket-history {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2, .ticket-history h3 {
+        font-size: 1.5em;
+    }
+
+    .ticket-history {
+        overflow-x: auto;
+    }
+
+    #history-table {
+        display: table;
+        width: 100%;
+    }
+
+    #history-table th,
+    #history-table td {
+        font-size: 14px;
+        padding: 5px;
+        white-space: nowrap;
+    }
+
+    #history-table th:nth-child(3),
+    #history-table td:nth-child(3) {
+        display: none;
+    }
+}
