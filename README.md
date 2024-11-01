@@ -1,16 +1,10 @@
-Employee Management System
-Overview
+Ticket Booking App
+Description
 
-The Employee Management System is a web application built with React that allows users to add, edit, and manage employee records. It features a user-friendly interface for entering employee details, viewing a list of employees, and searching for specific employees.
+The Ticket Booking App is a web application designed to streamline the process of booking and managing tickets for various events. Users can easily book tickets, view their booking history, and delete tickets if needed. The app provides a user-friendly interface and responsive design to ensure a seamless experience across devices.
 Features
 
-    Add Employee: Enter details including name, email, contact number, salary, date of birth, and an image URL.
-    Edit Employee: Modify existing employee details.
-    Remove Employee: Delete employees from the list.
-    Search Functionality: Quickly find employees by name or email.
-    Responsive Design: Optimized for various screen sizes.
-
-Technologies Used
-
-    React: For building the user interface.
-    SCSS: For styling the application.
+    User-Friendly Interface: Intuitive layout for easy navigation and ticket booking.
+    Booking Section: Allows users to enter details for booking tickets, including name, seat number, date, departure point, and destination.
+    Ticket History: Displays a list of booked tickets with relevant details, including ticket ID, name, seat number, date, departure point, and destination.
+    Delete Tickets: Users can delete tickets from their history with a confirmation alert.
